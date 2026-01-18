@@ -261,7 +261,7 @@
     <div class="wrap">
         <div class="card">
             <div class="header">
-                <h1>Para mi amor de Inglaterra, con todo mi corazón 💌</h1>
+                <h1>Para mi amorcito linda Kitty, con todo mi corazón 💌</h1>
             </div>
 
             <div class="envelope" id="envelope">
@@ -271,19 +271,19 @@
 
                 <article class="paper">
                     <h2>Mi amorcito</h2>
-                    <p>Desde que entraste en mi vida, todo cambió. Antes de ti, mis días eran simples y rutinarios, pero
-                        ahora cada instante tiene un significado especial porque sé que existes tú. Tu presencia me
-                        llena de paz y alegría; tu risa ilumina mis días y tu mirada tiene el poder de calmar cualquier
-                        tormenta dentro de mí. Pienso en ti constantemente, en cómo tu fuerza y ternura se combinan de
-                        una manera que me hace sentir protegida, comprendida y profundamente amada. No hay un solo
-                        momento en que no agradezca al destino haberte encontrado, porque tú eres mi alegría, mi refugio
-                        y mi sueño hecho realidad.</p>
-                    <p>Eres mi compañero, mi refugio, mi alegría y mi gran amor. No hay palabras que puedan expresar
-                        completamente lo que siento por ti, porque mi amor por ti trasciende cualquier lenguaje. Solo
-                        espero que sientas todo esto en cada abrazo, en cada beso, en cada palabra y en cada mirada que
-                        compartimos. Te amo hoy, te amaré mañana y siempre, porque tú eres mi bendición más grande y la
-                        razón por la que cada día vale la pena.</p>
-                    <p class="signature">Con amor, Tu latino ❤️</p>
+                    <p>Yo se que estos meses han sido perfectos, desde que llegaste a mi vida, mi vida también cambio mucho a tu lado, estoy aprendiendo cosas que
+                        yo mismo consideraba ser perfecto, pero me falta aprender mas de la vida, he conocido mucho de ti, tu familia, desde el principio cuando, hablábamos por texto, todo.
+                        La verdad se que las relaciones de pareja suelen ser muy cambiantes durante los meses, pero yo no quiero que pase nada malo entre nosotros, al contrario, quiero cambiar pero en el buen camino
+                        si hay momentos difíciles, nosotros dos somos capaces de resolverlo a estos problemas, por algo llevamos 5 meses juntos exactamente 5m y 3d. Así que piensa que tienes un gran hombre a tu lado
+                        simplemente necesita aprender de sus errores para poder seguir siendo felices juntos, tu misma sabias que ese hombre (Slaether) te hizo feliz el primer día, y diste toda tu confianza en seguir creciendo juntos
+                        hasta el día de hoy, se que hay momentos malos, pero todo es momentáneo, así que sigamos luchando juntos, el estrés, la angustia, la paz, el equilibrio, es parte de crecer como pareja, mi amor, yo te 
+                        amo con todo mi corazón, y seguiré siendo un buen hombre a tu lado.</p>
+                    <p>He vivido muchas experiencias malas desde que era niño, viendo a mi madre sufrir de la toxicidad al lado de su pareja, por muchos años, ha sido difícil para mi y muchas cosas mas.
+                        Por eso creo que soy un hombre de pareja muy feliz, comprensivo, relajado, ya que necesito la paz, vivir tiempo de calidad
+                        con alguien quien realmente yo amo, y para mi 5 meses felices están siendo los mejores
+                        No quiero que la distancia nos haga cambiar de opinión, debemos pensar en que estaremos juntos el tiempo que haya que esperar
+                        Cada dia, momento, tiempo, clima, todo, vale la pena estar contigo, lo que me importa es amarte y pese a todo, seguir a tu lado.</p>
+                    <p class="signature">Con amor, Tu latino de Costa Rica ❤️</p>
                 </article>
             </div>
 
@@ -344,6 +344,31 @@
             openBtn.style.display = "inline-block";
         });
     </script>
+    <audio id="musica" autoplay loop>
+        <source src="cancion.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+  (function () {
+    const musica = document.getElementById("musica");
+
+    function playMusic() {
+      if (!musica) return;
+      musica.play().catch(() => {});
+    }
+
+    // Intenta al cargar (a veces funciona)
+    window.addEventListener("load", playMusic);
+
+    // Si el navegador lo bloquea, con el primer clic/tap/tecla arranca seguro
+    document.addEventListener("click", playMusic, { once: true });
+    document.addEventListener("touchstart", playMusic, { once: true });
+    document.addEventListener("keydown", playMusic, { once: true });
+
+    // Extra: cuando le den a "Abrir carta" (sin tocar tu JS)
+    const openBtn = document.getElementById("openBtn");
+    if (openBtn) openBtn.addEventListener("click", playMusic);
+  })();
+</script>
 </body>
 
 </html>
